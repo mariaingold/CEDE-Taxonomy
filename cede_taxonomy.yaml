@@ -1,0 +1,540 @@
+scheme: CEDE
+version: 0.4
+updated: 2025-11-09
+author: "Maria Ingold"
+contact: "linkedin.com/in/mariaingold/"
+description: "Create, Enrich, Deliver, Engage taxonomy for AI in media products"
+license: "CC BY-NC-ND 4.0 International"
+license_url: "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+repository: "https://github.com/mariaingold/CEDE-Taxonomy"
+copyright: "© Maria Ingold 2025"
+
+categories:
+- label: Create
+  key: CREATE
+  description: "Generation and production of media content — ideation, scripting, virtual production, VFX, and editing."
+  subcategories:
+
+  - label: Asset Creation
+    key: CREATE.ASSET_CREATION
+    description: "Tools that generate or synthesise creative media assets including text, images, audio, video, and 3D models."
+    use_cases:
+    - label: 3D Modelling
+      key: CREATE.ASSET_CREATION.3D_MODELLING
+    - label: Image Generation
+      key: CREATE.ASSET_CREATION.IMAGE_GENERATION
+    - label: Music Generation
+      key: CREATE.ASSET_CREATION.MUSIC_GENERATION
+    - label: Scriptwriting
+      key: CREATE.ASSET_CREATION.SCRIPTWRITING
+    - label: Sound Effects / Foley
+      key: CREATE.ASSET_CREATION.SOUND_EFFECTS_FOLEY
+    - label: Text Generation
+      key: CREATE.ASSET_CREATION.TEXT_GENERATION
+    - label: Video Generation
+      key: CREATE.ASSET_CREATION.VIDEO_GENERATION
+    - label: Voice Cloning
+      key: CREATE.ASSET_CREATION.VOICE_CLONING
+
+  - label: Production
+    key: CREATE.PRODUCTION
+    use_cases:
+    - label: Autonomous Camera Tracking
+      key: CREATE.PRODUCTION.AUTONOMOUS_CAMERA_TRACKING
+    - label: Lighting Control
+      key: CREATE.PRODUCTION.LIGHTING_CONTROL
+    - label: Real-time Speech Enhancement
+      key: CREATE.PRODUCTION.REAL_TIME_SPEECH_ENHANCEMENT
+    - label: Virtual Production
+      key: CREATE.PRODUCTION.VIRTUAL_PRODUCTION
+
+  - label: Creative Analytics
+    key: CREATE.CREATIVE_ANALYTICS
+    use_cases:
+    - label: Box Office Prediction
+      key: CREATE.CREATIVE_ANALYTICS.BOX_OFFICE_PREDICTION
+    - label: Script Analysis
+      key: CREATE.CREATIVE_ANALYTICS.SCRIPT_ANALYSIS
+
+  - label: Editing
+    key: CREATE.EDITING
+    use_cases:
+    - label: Audio Video Synchronisation
+      key: CREATE.EDITING.AUDIO_VIDEO_SYNCHRONISATION
+    - label: Auto Cutting
+      key: CREATE.EDITING.AUTO_CUTTING
+    - label: Background Audio Enhancement
+      key: CREATE.EDITING.BACKGROUND_AUDIO_ENHANCEMENT
+    - label: Colour Grading
+      key: CREATE.EDITING.COLOUR_GRADING
+    - label: Image Editing
+      key: CREATE.EDITING.IMAGE_EDITING
+    - label: Noise Reduction
+      key: CREATE.EDITING.NOISE_REDUCTION
+    - label: Speech Enhancement
+      key: CREATE.EDITING.SPEECH_ENHANCEMENT
+    - label: Upscaling
+      key: CREATE.EDITING.UPSCALING
+    - label: Video Editing
+      key: CREATE.EDITING.VIDEO_EDITING
+
+  - label: Immersive Reality
+    key: CREATE.IMMERSIVE_REALITY
+    use_cases:
+    - label: Video Stitching (VR)
+      key: CREATE.IMMERSIVE_REALITY.VIDEO_STITCHING_VR
+
+  - label: VFX & Compositing
+    key: CREATE.VFX_AND_COMPOSITING
+    use_cases:
+    - label: Compositing
+      key: CREATE.VFX_AND_COMPOSITING.COMPOSITING
+    - label: Depth Mapping
+      key: CREATE.VFX_AND_COMPOSITING.DEPTH_MAPPING
+    - label: Digital Replica / Deepfake
+      key: CREATE.VFX_AND_COMPOSITING.DIGITAL_REPLICA_DEEPFAKE
+    - label: Face Tracking
+      key: CREATE.VFX_AND_COMPOSITING.FACE_TRACKING
+    - label: Image Restoration
+      key: CREATE.VFX_AND_COMPOSITING.IMAGE_RESTORATION
+    - label: Keying
+      key: CREATE.VFX_AND_COMPOSITING.KEYING
+    - label: Masking
+      key: CREATE.VFX_AND_COMPOSITING.MASKING
+    - label: Motion Blur
+      key: CREATE.VFX_AND_COMPOSITING.MOTION_BLUR
+    - label: Painting
+      key: CREATE.VFX_AND_COMPOSITING.PAINTING
+    - label: Rotoscoping
+      key: CREATE.VFX_AND_COMPOSITING.ROTOSCOPING
+    - label: Time Warping
+      key: CREATE.VFX_AND_COMPOSITING.TIME_WARP
+    - label: Tracking & Matchmoving
+      key: CREATE.VFX_AND_COMPOSITING.TRACKING_AND_MATCHMOVING
+
+  - label: Visual Analysis
+    key: CREATE.VISUAL_ANALYSIS
+    use_cases:
+    - label: Deepfake Detection
+      key: CREATE.VISUAL_ANALYSIS.DEEPFAKE_DETECTION
+    - label: Facial Blur
+      key: CREATE.VISUAL_ANALYSIS.FACIAL_BLUR
+    - label: Licence Plate Blur
+      key: CREATE.VISUAL_ANALYSIS.LICENCE_PLATE_BLUR
+
+
+- label: Enrich
+  key: ENRICH
+  description: "Post-creation or post-recording enrichment of VOD assets before delivery — analysis, tagging, localisation, accessibility, and quality control."
+  subcategories:
+
+  - label: Audio & Voice
+    key: ENRICH.AUDIO_AND_VOICE
+    use_cases:
+    - label: Acapella or Voice Separation
+      key: ENRICH.AUDIO_AND_VOICE.ACAPELLA_OR_VOICE_SEPARATION
+    - label: Audio Separation
+      key: ENRICH.AUDIO_AND_VOICE.AUDIO_SEPARATION
+    - label: Background Audio Extraction
+      key: ENRICH.AUDIO_AND_VOICE.BACKGROUND_AUDIO_EXTRACTION
+    - label: Dialogue, Music, and Effects Separation
+      key: ENRICH.AUDIO_AND_VOICE.DIALOGUE_MUSIC_AND_EFFECTS_SEPARATION
+    - label: Instrument Stem Separation
+      key: ENRICH.AUDIO_AND_VOICE.INSTRUMENT_STEM_SEPARATION
+    - label: Language Identification
+      key: ENRICH.AUDIO_AND_VOICE.LANGUAGE_IDENTIFICATION
+    - label: Lyric Transcription
+      key: ENRICH.AUDIO_AND_VOICE.LYRIC_TRANSCRIPTION
+    - label: Multi-Speaker Separation
+      key: ENRICH.AUDIO_AND_VOICE.MULTI_SPEAKER_SEPARATION
+    - label: On-demand Speech Enhancement
+      key: ENRICH.AUDIO_AND_VOICE.ON_DEMAND_SPEECH_ENHANCEMENT
+    - label: Speaker Identification
+      key: ENRICH.AUDIO_AND_VOICE.SPEAKER_IDENTIFICATION
+    - label: Voiceover
+      key: ENRICH.AUDIO_AND_VOICE.VOICEOVER
+      alt_labels:
+      - Text to Speech
+      - Text-to-Speech
+  - label: Authentication & Provenance
+    key: ENRICH.AUTHENTICATION_AND_PROVENANCE
+    use_cases:
+    - label: Authentication
+      key: ENRICH.AUTHENTICATION_AND_PROVENANCE.AUTHENTICATION
+
+  - label: Content Understanding & Tagging
+    key: ENRICH.CONTENT_UNDERSTANDING_AND_TAGGING
+    use_cases:
+    - label: Analytics
+      key: ENRICH.CONTENT_UNDERSTANDING_AND_TAGGING.ANALYTICS
+    - label: Content Deduplication
+      key: ENRICH.CONTENT_UNDERSTANDING_AND_TAGGING.CONTENT_DEDUPLICATION
+    - label: Content Understanding
+      key: ENRICH.CONTENT_UNDERSTANDING_AND_TAGGING.CONTENT_UNDERSTANDING
+    - label: Diversity Analysis
+      key: ENRICH.CONTENT_UNDERSTANDING_AND_TAGGING.DIVERSITY_ANALYSIS
+    - label: Insights
+      key: ENRICH.CONTENT_UNDERSTANDING_AND_TAGGING.INSIGHTS
+      alt_labels:
+      - Insight Generation
+      - Content Insights
+    - label: Reverse Search
+      key: ENRICH.CONTENT_UNDERSTANDING_AND_TAGGING.REVERSE_SEARCH
+    - label: Search
+      key: ENRICH.CONTENT_UNDERSTANDING_AND_TAGGING.SEARCH
+      alt_labels:
+      - Retrieval
+    - label: Social Content Generation
+      key: ENRICH.CONTENT_UNDERSTANDING_AND_TAGGING.SOCIAL_CONTENT_GENERATION
+      alt_labels:
+      - Generate Social Post
+    - label: Summarisation
+      key: ENRICH.CONTENT_UNDERSTANDING_AND_TAGGING.SUMMARISATION
+    - label: Tagging
+      key: ENRICH.CONTENT_UNDERSTANDING_AND_TAGGING.TAGGING
+      alt_labels:
+      - Auto-Tagging
+      - Content Tagging
+      - Metadata Tagging
+    - label: Vector Search
+      key: ENRICH.CONTENT_UNDERSTANDING_AND_TAGGING.VECTOR_SEARCH
+      alt_labels:
+      - Semantic Search
+
+  - label: Custom AI & Models
+    key: ENRICH.CUSTOM_AI_AND_MODELS
+    use_cases:
+    - label: Custom AI Model Training
+      key: ENRICH.CUSTOM_AI_AND_MODELS.CUSTOM_AI_MODEL_TRAINING
+
+  - label: Localisation & Accessibility
+    key: ENRICH.LOCALISATION_AND_ACCESSIBILITY
+    use_cases:
+    - label: Audio Description
+      key: ENRICH.LOCALISATION_AND_ACCESSIBILITY.AUDIO_DESCRIPTION
+    - label: Audio Translation
+      key: ENRICH.LOCALISATION_AND_ACCESSIBILITY.AUDIO_TRANSLATION
+    - label: Closed Captioning
+      key: ENRICH.LOCALISATION_AND_ACCESSIBILITY.CLOSED_CAPTIONING
+    - label: Dubbing
+      key: ENRICH.LOCALISATION_AND_ACCESSIBILITY.DUBBING
+    - label: Script Synchronisation
+      key: ENRICH.LOCALISATION_AND_ACCESSIBILITY.SCRIPT_SYNCHRONISATION
+    - label: Sign Language
+      key: ENRICH.LOCALISATION_AND_ACCESSIBILITY.SIGN_LANGUAGE
+    - label: Subtitle Accessibility Hints
+      key: ENRICH.LOCALISATION_AND_ACCESSIBILITY.SUBTITLE_ACCESSIBILITY_HINTS
+    - label: Subtitling
+      key: ENRICH.LOCALISATION_AND_ACCESSIBILITY.SUBTITLING
+      alt_labels:
+      - Captioning
+    - label: Text Translation
+      key: ENRICH.LOCALISATION_AND_ACCESSIBILITY.TEXT_TRANSLATION
+    - label: Transcription
+      key: ENRICH.LOCALISATION_AND_ACCESSIBILITY.TRANSCRIPTION
+      alt_labels:
+      - Audio Transcription
+      - Speech to Text
+      - Speech-to-Text
+      - Automatic Speech Recognition
+      - ASR
+      
+  - label: Moderation and Compliance
+    key: ENRICH.MODERATION_AND_COMPLIANCE
+    use_cases:
+    - label: Broadcast Compliance Logging
+      key: ENRICH.MODERATION_AND_COMPLIANCE.BROADCAST_COMPLIANCE_LOGGING
+    - label: Content Moderation
+      key: ENRICH.MODERATION_AND_COMPLIANCE.CONTENT_MODERATION
+
+  - label: Monitor Recordings
+    key: ENRICH.MONITOR_RECORDINGS
+    use_cases:
+    - label: Ad Alert
+      key: ENRICH.MONITOR_RECORDINGS.AD_ALERT
+    - label: Ad Detection Fingerprinting
+      key: ENRICH.MONITOR_RECORDINGS.AD_DETECTION_FINGERPRINTING
+    - label: Music Detection Fingerprinting
+      key: ENRICH.MONITOR_RECORDINGS.MUSIC_DETECTION_FINGERPRINTING
+    - label: Topic Alert
+      key: ENRICH.MONITOR_RECORDINGS.TOPIC_ALERT
+      alt_labels:
+      - News Alert
+      - Keyword Alert
+    - label: Topic Classification
+      key: ENRICH.MONITOR_RECORDINGS.TOPIC_CLASSIFICATION
+      alt_labels:
+      - News Classification
+      - Content Classification
+    - label: Topic Detection
+      key: ENRICH.MONITOR_RECORDINGS.TOPIC_DETECTION
+      alt_labels:
+      - News Detection
+
+  - label: Orchestration
+    key: ENRICH.ORCHESTRATION
+    use_cases:
+    - label: Ad Break Automation
+      key: ENRICH.ORCHESTRATION.AD_BREAK_AUTOMATION
+    - label: Automated Categorisation
+      key: ENRICH.ORCHESTRATION.AUTOMATED_CATEGORISATION
+    - label: Conversational Operational Interface
+      key: ENRICH.ORCHESTRATION.CONVERSATIONAL_OPERATIONAL_INTERFACE
+    - label: Licence Analysis
+      key: ENRICH.ORCHESTRATION.LICENCE_ANALYSIS
+    - label: Media Planning
+      key: ENRICH.ORCHESTRATION.MEDIA_PLANNING
+    - label: Quality Control
+      key: ENRICH.ORCHESTRATION.QUALITY_CONTROL
+    - label: Scheduling
+      key: ENRICH.ORCHESTRATION.SCHEDULING
+    - label: Segment Detection
+      key: ENRICH.ORCHESTRATION.SEGMENT_DETECTION
+    - label: Verification
+      key: ENRICH.ORCHESTRATION.VERIFICATION
+    - label: Workflow Automation
+      key: ENRICH.ORCHESTRATION.WORKFLOW_AUTOMATION
+
+  - label: Video and Visual Analysis
+    key: ENRICH.VIDEO_AND_VISUAL_ANALYSIS
+    use_cases:
+    - label: Age Estimation
+      key: ENRICH.VIDEO_AND_VISUAL_ANALYSIS.AGE_ESTIMATION
+    - label: Aspect Ratio Adjustment
+      key: ENRICH.VIDEO_AND_VISUAL_ANALYSIS.ASPECT_RATIO_ADJUSTMENT
+    - label: Aspect Ratio Detection
+      key: ENRICH.VIDEO_AND_VISUAL_ANALYSIS.ASPECT_RATIO_DETECTION
+    - label: Automated Indexing
+      key: ENRICH.VIDEO_AND_VISUAL_ANALYSIS.AUTOMATED_INDEXING
+    - label: Automated Dataset Creation
+      key: ENRICH.VIDEO_AND_VISUAL_ANALYSIS.AUTOMATED_DATASET_CREATION
+    - label: Automated Trailer Creation
+      key: ENRICH.VIDEO_AND_VISUAL_ANALYSIS.AUTOMATED_TRAILER_CREATION
+    - label: Duplicate Detection
+      key: ENRICH.VIDEO_AND_VISUAL_ANALYSIS.DUPLICATE_DETECTION
+    - label: Entity Recognition and Relationships
+      key: ENRICH.VIDEO_AND_VISUAL_ANALYSIS.ENTITY_RECOGNITION_AND_RELATIONSHIPS
+    - label: Face Detection
+      key: ENRICH.VIDEO_AND_VISUAL_ANALYSIS.FACE_DETECTION
+      alt_labels:
+      - Detect Faces
+    - label: Facial Recognition
+      alt_labels:
+      - Face Recognition
+      - Identify Faces
+      - Match Faces
+      - Recognise Faces
+      key: ENRICH.VIDEO_AND_VISUAL_ANALYSIS.FACIAL_RECOGNITION
+    - label: Fake News Detection
+      key: ENRICH.VIDEO_AND_VISUAL_ANALYSIS.FAKE_NEWS_DETECTION
+    - label: Gender Estimation
+      key: ENRICH.VIDEO_AND_VISUAL_ANALYSIS.GENDER_ESTIMATION
+    - label: Highlight Clipping
+      key: ENRICH.VIDEO_AND_VISUAL_ANALYSIS.HIGHLIGHT_CLIPPING
+      alt_labels:
+      - Automatic Clipping
+      - Auto Highlights
+      - Clip Creation
+      - Highlight Creation
+    - label: Landmark Recognition
+      key: ENRICH.VIDEO_AND_VISUAL_ANALYSIS.LANDMARK_RECOGNITION
+    - label: Logo Detection
+      key: ENRICH.VIDEO_AND_VISUAL_ANALYSIS.LOGO_DETECTION
+    - label: Logo Recognition
+      key: ENRICH.VIDEO_AND_VISUAL_ANALYSIS.LOGO_RECOGNITION
+    - label: Object Recognition
+      key: ENRICH.VIDEO_AND_VISUAL_ANALYSIS.OBJECT_RECOGNITION
+    - label: Optical Character Recognition (OCR)
+      key: ENRICH.VIDEO_AND_VISUAL_ANALYSIS.OPTICAL_CHARACTER_RECOGNITION_OCR
+      alt_labels:
+      - OCR
+      - Optical Character Recognition
+      - Text Recognition
+    - label: Product Placement
+      key: ENRICH.VIDEO_AND_VISUAL_ANALYSIS.PRODUCT_PLACEMENT
+    - label: QoE Analysis
+      key: ENRICH.VIDEO_AND_VISUAL_ANALYSIS.QOE_ANALYSIS
+    - label: QR Code Detection
+      key: ENRICH.VIDEO_AND_VISUAL_ANALYSIS.QR_CODE_DETECTION
+    - label: Scene Recognition
+      key: ENRICH.VIDEO_AND_VISUAL_ANALYSIS.SCENE_RECOGNITION
+    - label: Shot Boundary Detection
+      key: ENRICH.VIDEO_AND_VISUAL_ANALYSIS.SHOT_BOUNDARY_DETECTION
+    - label: Unknown Identity Resolution
+      key: ENRICH.VIDEO_AND_VISUAL_ANALYSIS.UNKNOWN_IDENTITY_RESOLUTION
+    - label: Video Enhancement
+      key: ENRICH.VIDEO_AND_VISUAL_ANALYSIS.VIDEO_ENHANCEMENT
+
+
+- label: Deliver
+  key: DELIVER
+  description: "Preparation and distribution of live or on-demand content — compression, packaging, compliance, advertising, personalisation, recommendations, and delivery optimisation."
+  subcategories:
+
+  - label: Compliance & Moderation
+    key: DELIVER.COMPLIANCE_AND_MODERATION
+    use_cases:
+    - label: Live Content Moderation
+      key: DELIVER.COMPLIANCE_AND_MODERATION.LIVE_CONTENT_MODERATION
+
+  - label: Content Understanding
+    key: DELIVER.CONTENT_UNDERSTANDING
+    use_cases:
+    - label: Live Summarisation
+      key: DELIVER.CONTENT_UNDERSTANDING.LIVE_SUMMARISATION
+
+  - label: Delivery Optimisation
+    key: DELIVER.DELIVERY_OPTIMISATION
+    use_cases:
+    - label: CDN Optimisation
+      key: DELIVER.DELIVERY_OPTIMISATION.CDN_OPTIMISATION
+    - label: Compression / Encoding
+      key: DELIVER.DELIVERY_OPTIMISATION.COMPRESSION_ENCODING
+    - label: Edge AI
+      key: DELIVER.DELIVERY_OPTIMISATION.EDGE_AI
+    - label: Network Monitoring
+      key: DELIVER.DELIVERY_OPTIMISATION.NETWORK_MONITORING
+
+  - label: Localisation & Accessibility
+    key: DELIVER.LOCALISATION_AND_ACCESSIBILITY
+    use_cases:
+    - label: Live Audio Translation
+      key: DELIVER.LOCALISATION_AND_ACCESSIBILITY.LIVE_AUDIO_TRANSLATION
+    - label: Live Subtitling
+      key: DELIVER.LOCALISATION_AND_ACCESSIBILITY.LIVE_SUBTITLING
+      alt_labels:
+      - Live Captioning
+    - label: Live Transcription
+      key: DELIVER.LOCALISATION_AND_ACCESSIBILITY.LIVE_TRANSCRIPTION
+    - label: Live Text Translation
+      key: DELIVER.LOCALISATION_AND_ACCESSIBILITY.LIVE_TEXT_TRANSLATION
+
+  - label: Marketing & Messaging
+    key: DELIVER.MARKETING_AND_MESSAGING
+    use_cases:
+    - label: Targeted Marketing
+      key: DELIVER.MARKETING_AND_MESSAGING.TARGETED_MARKETING
+
+  - label: Monetisation & Advertising
+    key: DELIVER.MONETISATION_AND_ADVERTISING
+    use_cases:
+    - label: Ad Break Detection
+      key: DELIVER.MONETISATION_AND_ADVERTISING.AD_BREAK_DETECTION
+    - label: Content Aware Advertising
+      key: DELIVER.MONETISATION_AND_ADVERTISING.CONTENT_AWARE_ADVERTISING
+    - label: Product Placement
+      key: DELIVER.MONETISATION_AND_ADVERTISING.PRODUCT_PLACEMENT
+    - label: Programmatic Advertising
+      key: DELIVER.MONETISATION_AND_ADVERTISING.PROGRAMMATIC_ADVERTISING
+    - label: Segmentation
+      key: DELIVER.MONETISATION_AND_ADVERTISING.SEGMENTATION
+    - label: Targeted Advertising
+      key: DELIVER.MONETISATION_AND_ADVERTISING.TARGETED_ADVERTISING
+
+  - label: Monitoring
+    key: DELIVER.MONITORING
+    use_cases:
+    - label: Content Matching
+      key: DELIVER.MONITORING.CONTENT_MATCHING
+    - label: Live Ad Alert
+      key: DELIVER.MONITORING.LIVE_AD_ALERT
+    - label: Live Ad Detection Fingerprinting
+      key: DELIVER.MONITORING.LIVE_AD_DETECTION_FINGERPRINTING
+      alt_labels:
+      - Live Commercial Detection
+    - label: Live Topic Alert
+      key: DELIVER.MONITORING.LIVE_TOPIC_ALERT
+      alt_labels:
+      - Live News Alert
+      - Live Keyword Alert
+    - label: Live Topic Detection
+      key: DELIVER.MONITORING.LIVE_TOPIC_DETECTION
+      alt_labels:
+      - Live News Detection
+      - Live News Monitoring
+
+  - label: Personalisation & Recommendations
+    key: DELIVER.PERSONALISATON_AND_RECOMMENDATIONS
+    use_cases:
+    - label: Hyper-personalisation
+      key: DELIVER.PERSONALISATON_AND_RECOMMENDATIONS.HYPER_PERSONALISATION
+    - label: Personalisation
+      key: DELIVER.PERSONALISATON_AND_RECOMMENDATIONS.PERSONALISATION
+    - label: Recommendations
+      key: DELIVER.PERSONALISATON_AND_RECOMMENDATIONS.RECOMMENDATIONS
+
+  - label: Security & Rights Management
+    key: DELIVER.SECURITY_AND_RIGHTS_MANAGEMENT
+    use_cases:
+    - label: Content Security
+      key: DELIVER.SECURITY_AND_RIGHTS_MANAGEMENT.CONTENT_SECURITY
+
+  - label: Video Processing
+    key: DELIVER.VIDEO_PROCESSING
+    use_cases:
+    - label: Adaptive bitrate delivery
+      key: DELIVER.VIDEO_PROCESSING.ADAPTIVE_BITRATE_DELIVERY
+    - label: Perceptual Visual Quality Enhancement
+      key: DELIVER.VIDEO_PROCESSING.PERCEPTUAL_VISUAL_QUALITY_ENHANCEMENT
+    - label: Super Resolution
+      key: DELIVER.VIDEO_PROCESSING.SUPER_RESOLUTION
+
+
+- label: Engage
+  key: ENGAGE
+  description: "User interaction and experience — discovery, conversational interfaces, commerce, and consumption insights."
+  subcategories:
+
+  - label: Analytics & Measurement
+    key: ENGAGE.ANALYTICS_AND_MEASUREMENT
+    use_cases:
+    - label: Ad Impact
+      key: ENGAGE.ANALYTICS_AND_MEASUREMENT.AD_IMPACT
+    - label: Analytics-Box Office
+      key: ENGAGE.ANALYTICS_AND_MEASUREMENT.ANALYTICS_BOX_OFFICE
+    - label: Analytics-Reviews
+      key: ENGAGE.ANALYTICS_AND_MEASUREMENT.ANALYTICS_REVIEWS
+    - label: Analytics-User Behaviour
+      key: ENGAGE.ANALYTICS_AND_MEASUREMENT.ANALYTICS_USER_BEHAVIOUR
+    - label: Reach Analysis
+      key: ENGAGE.ANALYTICS_AND_MEASUREMENT.REACH_ANALYSIS
+
+  - label: Commerce
+    key: ENGAGE.COMMERCE
+    use_cases:
+    - label: Shopification
+      key: ENGAGE.COMMERCE.SHOPIFICATION
+
+  - label: Conversational Interface
+    key: ENGAGE.CONVERSATIONAL_INTERFACE
+    use_cases:
+    - label: Chatbots
+      key: ENGAGE.CONVERSATIONAL_INTERFACE.CHATBOTS
+    - label: NPC Chat
+      key: ENGAGE.CONVERSATIONAL_INTERFACE.NPC_CHAT
+
+  - label: Discovery & Navigation
+    key: ENGAGE.DISCOVERY_AND_NAVIGATION
+    use_cases:
+    - label: Discovery
+      key: ENGAGE.DISCOVERY_AND_NAVIGATION.DISCOVERY
+    - label: Consumer Search
+      key: ENGAGE.DISCOVERY_AND_NAVIGATION.CONSUMER_SEARCH
+
+constraints:
+  - "Products may have multiple categories, multiple subcategories, and multiple use_cases (multi-label)."
+  - "Assign the most specific applicable use_case(s); add sibling use_cases if scope genuinely spans them."
+  - "A label key equals the full path: CATEGORY.SUBCATEGORY.USE_CASE."
+
+disambiguation:
+  rules:
+    - text: "If live streams or delivering VOD workflows, select Deliver.*"
+    - text: "If recorded files or VOD after creation and before publishing, select Enrich.*"
+    - text: "If creation / production but not live, select Create.*"
+    - text: "If user discovery /interaction, select Engage.*"
+    - text: "If product clearly fits multiple categories (like both live and file-based) allow multi-label."
+
+governance:
+  change_control:
+    review_required: true
+    reviewers: ["maria_ingold"]
